@@ -1,0 +1,5 @@
+com\spring\security\config\WebAppInitializer.class
+com\spring\security\controllers\RootController.class
+com\spring\security\config\WebAppConfig.class
+com\spring\security\config\WebSecurityConfig.class
+com\spring\security\config\WebSecurityInitializer.class
