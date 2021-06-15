@@ -17,24 +17,30 @@
 </head>
 <body>
 
-	<h1 align="center" style="background-color:threedlightshadow;font-style: italic;">My Custom Login Page</h1>
+	<h1 align="center"
+		style="background-color: threedlightshadow; font-style: italic;">My
+		Custom Login Page</h1>
 
-	<div class="alert alert-danger" role="alert">
-		<c:if test="${param.error != null}">
+
+	<c:if test="${param.error != null}">
+		<div class="alert alert-danger" role="alert">
 			<i style="color: red;">Invalid UserName or Password. Please try
 				again !!!</i>
-		</c:if>
-	</div>
-	<div class="alert alert-success" role="alert">
-		<c:if test="${param.logout != null}">
+		</div>
+	</c:if>
+
+
+	<c:if test="${param.logout != null}">
+		<div class="alert alert-success" role="alert">
 			<i style="color: green;">You are Successfully logged out. Sign in
 				again !!!</i>
-		</c:if>
-	</div>
+		</div>
+	</c:if>
+
 	<form:form action="process-login" method="POST">
 		<div class="form-group">
-			<label>UserName</label> <input type="text"
-				class="form-control" name="username" placeholder="Enter username">
+			<label>UserName</label> <input type="text" class="form-control"
+				name="username" placeholder="Enter username">
 		</div>
 		<div class="form-group">
 			<label>Password</label> <input type="password" class="form-control"
@@ -46,7 +52,8 @@
 				out</label>
 		</div> -->
 		<button type="submit" class="btn btn-primary">Submit</button>
-		<small class="form-text text-muted">We'll never share user information with anyone else.</small>
+		<small class="form-text text-muted">We'll never share user
+			information with anyone else.</small>
 	</form:form>
 
 </body>

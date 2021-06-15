@@ -7,13 +7,19 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Welcome Page</title>
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+	integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+	crossorigin="anonymous">
 </head>
 <body>
-	<h2>Hi..Welcome to spring security project !!!</h2>
+<div align="center">
+	<h2 >Hi..Welcome to spring security project !!!</h2>
+	<br>	
 	<form:form action="logout" method="POST">
-		<button type="submit" value="logout">logout</button>
+		<input class="btn warning" type="submit" value="logout"></input>
 	</form:form>
-
+</div>
 
 </body>
 </html>
